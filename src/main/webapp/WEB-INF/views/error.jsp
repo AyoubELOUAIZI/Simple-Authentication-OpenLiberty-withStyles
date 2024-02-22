@@ -8,5 +8,10 @@
 <body>
     <h2>Error</h2>
     <p>An error occurred. Please try again later.</p>
+
+
+     <!-- -------------------footer-------------------- -->
+    <%@ include file="./footer.jsp" %>
+    <!-- ----------------------------------------------- -->
 </body>
 </html>

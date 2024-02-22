@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/style.css">  
+    <link rel="stylesheet" href="./../css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
     <title>Contact Us</title>
 </head>
 <body>
@@ -23,10 +24,15 @@
         <!--  -->
       </ul>
     </nav>
+   <%-- <h2>Contact Us</h2>
+    <p>This is the Contact Us page content.</p> --%>
     <section>
-   <h2>Contact Us</h2>
-    <p>This is the Contact Us page content.</p>
+     <%@ include file="./components/contactus.jsp" %>
     </section>
+
+     <!-- -------------------footer-------------------- -->
+    <%@ include file="./footer.jsp" %>
+    <!-- ----------------------------------------------- -->
    
 </body>
 </html>
