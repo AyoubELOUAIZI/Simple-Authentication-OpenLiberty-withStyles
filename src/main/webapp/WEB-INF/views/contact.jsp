@@ -26,9 +26,10 @@
     </nav>
    <%-- <h2>Contact Us</h2>
     <p>This is the Contact Us page content.</p> --%>
-    <section>
+    
+    <%-- <section>
+    </section> --%>
      <%@ include file="./components/contactus.jsp" %>
-    </section>
 
      <!-- -------------------footer-------------------- -->
     <%@ include file="./footer.jsp" %>

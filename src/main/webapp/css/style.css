@@ -14,7 +14,7 @@
     height: 80px;
     width: 100%;
   }
-  label.logo{
+ nav label.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -41,7 +41,7 @@
     background: #1b9bff;
     transition: .5s;
   }
-  .checkbtn{
+  nav .checkbtn{
     font-size: 30px;
     color: white;
     float: right;
@@ -50,11 +50,11 @@
     cursor: pointer;
     display: none;
   }
-  #check{
+  nav #check{
     display: none;
   }
   @media (max-width: 952px){
-    label.logo{
+   nav label.logo{
       font-size: 30px;
       padding-left: 50px;
     }
@@ -63,7 +63,7 @@
     }
   }
   @media (max-width: 858px){
-    .checkbtn{
+    nav .checkbtn{
       display: block;
     }
    nav ul{
@@ -71,6 +71,7 @@
       width: 100%;
       height: 100vh;
       background: #2c3e50;
+      z-index: 1001;
       top: 80px;
       left: -100%;
       text-align: center;

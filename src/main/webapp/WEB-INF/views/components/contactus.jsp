@@ -1,7 +1,7 @@
 <style>
 
 
-h1 {
+.contactus h1 {
     font-family: 'Poppins', sans-serif, 'arial';
     font-weight: 600;
     font-size: 72px;
@@ -9,7 +9,7 @@ h1 {
     text-align: center;
 }
 
-h4 {
+.contactus h4 {
     font-family: 'Roboto', sans-serif, 'arial';
     font-weight: 400;
     font-size: 20px;
@@ -19,7 +19,7 @@ h4 {
 
 /* ///// inputs /////*/
 
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+.contactus input:focus ~ label,.contactus textarea:focus ~ label,.contactus input:valid ~ label,.contactus textarea:valid ~ label {
     font-size: 0.75em;
     color: #999;
     top: -5px;
@@ -27,7 +27,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     transition: all 0.225s ease;
 }
 
-.styled-input {
+.contactus .styled-input {
     float: left;
     width: 293px;
     margin: 1rem 0;
@@ -36,12 +36,12 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 @media only screen and (max-width: 768px){
-    .styled-input {
+   .contactus .styled-input {
         width:100%;
     }
 }
 
-.styled-input label {
+.contactus .styled-input label {
     color: #999;
     padding: 1.3rem 30px 1rem 30px;
     position: absolute;
@@ -52,13 +52,13 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     pointer-events: none;
 }
 
-.styled-input.wide { 
+.contactus .styled-input.wide { 
     width: 650px;
     max-width: 100%;
 }
 
-input,
-textarea {
+.contactus input,
+.contactus textarea {
     padding: 30px;
     border: 0;
     width: 100%;
@@ -68,28 +68,28 @@ textarea {
     border-radius: 4px;
 }
 
-input:focus,
-textarea:focus { outline: 0; }
+.contactus input:focus,
+.contactus textarea:focus { outline: 0; }
 
-input:focus ~ span,
-textarea:focus ~ span {
+.contactus input:focus ~ span,
+.contactus textarea:focus ~ span {
     width: 100%;
     -webkit-transition: all 0.075s ease;
     transition: all 0.075s ease;
 }
 
-textarea {
+.contactus textarea {
     width: 100%;
     min-height: 15em;
 }
 
-.input-container {
+.contactus .input-container {
     width: 650px;
     max-width: 100%;
     margin: 20px auto 25px auto;
 }
 
-.submit-btn {
+.contactus .submit-btn {
     float: right;
     padding: 7px 35px;
     border-radius: 60px;
@@ -105,30 +105,32 @@ textarea {
     margin-bottom:90px;
 }
 
-.submit-btn:hover {
+.contactus .submit-btn:hover {
     transform: translateY(1px);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
               0 1px 1px 0 rgba(0,0,0,0.09);
 }
 
 @media (max-width: 768px) {
-    .submit-btn {
+   .contactus .submit-btn {
         width:100%;
         float: none;
         text-align:center;
     }
 }
 
-input[type=checkbox] + label {
+.contactus input[type=checkbox] + label {
   color: #ccc;
   font-style: italic;
 } 
 
-input[type=checkbox]:checked + label {
+.contactus input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }
 </style>
+<div class="contactus">
+
 <div class="container">
 	<div class="row">
 			<h1>contact us</h1>
@@ -165,4 +167,5 @@ input[type=checkbox]:checked + label {
 				<div class="btn-lrg submit-btn">Send Message</div>
 			</div>
 	</div>
+</div>
 </div>
