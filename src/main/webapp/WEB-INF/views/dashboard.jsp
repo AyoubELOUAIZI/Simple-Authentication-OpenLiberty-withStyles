@@ -8,19 +8,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">  
     <title>Dashboard</title>
 </head>
 <body>
 
-<h1>Dashboard Page</h1>
 <%  
     User user = (User) session.getAttribute("user");
     if (user != null) {
+        
 %>
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">LOGO</label>
+      <ul>
+        <li><a href="/web02">Home</a></li>
+        <!--  -->
+        <li><a   href="about">About</a></li>
+        <li><a href="contact">Contact</a></li>
+        <!--  -->
+      </ul>
+    </nav>
+    <section>
+    <h1>Dashboard Page</h1>
     <h2>Welcome to Dashboard</h2>
     <p>Welcome, <%= user.getUsername() %>!</p>
     <p>Email: <%= user.getEmail() %></p>
     <a href="/web02/logout">Logout</a> <!-- This link will trigger the logout action -->
+
+    </section>
+
+
 <%
     } else {
         response.sendRedirect("/web02/page/login"); // Redirect to login if user is not authenticated
