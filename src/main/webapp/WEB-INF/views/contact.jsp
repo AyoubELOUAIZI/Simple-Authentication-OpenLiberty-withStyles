@@ -21,7 +21,6 @@
         <li><a   href="about">About</a></li>
         <li><a class="active" href="#">Contact</a></li>
         <li><a href="login">Login</a></li>
-        <li><a href="signup">Sign up</a></li>
         <!--  -->
       </ul>
     </nav>

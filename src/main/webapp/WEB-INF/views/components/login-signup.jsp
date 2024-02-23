@@ -402,9 +402,9 @@ body {
             </div>
             <button type="submit">Sign in</button>
             <p>
-                <b>
+                <%-- <b>
                     Forgot password?
-                </b>
+                </b> --%>
             </p>
             <p>
                 <span>

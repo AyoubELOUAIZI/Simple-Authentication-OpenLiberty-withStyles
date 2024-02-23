@@ -25,7 +25,6 @@
         <li><a href="page/about">About</a></li>
         <li><a href="page/contact">Contact</a></li>
         <li><a href="page/login">Login</a></li>
-        <li><a href="page/signup">Sign up</a></li>
         <!--  -->
       </ul>
     </nav>
