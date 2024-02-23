@@ -24,27 +24,33 @@ public class LoginServlet extends HttpServlet {
         System.out.println("username: " + email);
         System.out.println("password:"+password);
 
+        HttpSession session = request.getSession();
+        session.setAttribute("authError", null);
+        session.setAttribute("signError", null);
+
         UserDao userDao = new UserDao();
         try {
             User user = userDao.getUserByEmailAndPassword(email, password);
            System.out.println("\n\n\nuser: \n{" + user+"\n}");
             if (user != null) {
                 // User authenticated, set user session attribute
-                HttpSession session = request.getSession();
                 session.setAttribute("user", user);
                 session.setAttribute("authError", null);
                 response.sendRedirect("page/dashboard");
             } else {
                 // Authentication failed, redirect to error page
-                HttpSession session = request.getSession();
-                session.setAttribute("authError", "Incorrect email or password");
+                session.setAttribute("authError", "Incorrect email or password. Please double-check your credentials.");
 
                 response.sendRedirect("page/login");
             }
         } catch (SQLException e) {
             e.printStackTrace();
             // Handle database error, redirect to error page
-            response.sendRedirect("page/error");
+            // response.sendRedirect("page/error");
+
+            session.setAttribute("authError", "We encountered a database connection issue. Please try again.");
+            response.sendRedirect("page/login");
+
         }
     }
 

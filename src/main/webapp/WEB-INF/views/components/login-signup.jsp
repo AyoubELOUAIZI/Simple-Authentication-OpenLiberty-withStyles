@@ -362,6 +362,12 @@ body {
         <form action="/web02/signup" method="post" class="form sign-up">
             <div class="input-group">
                 <i class='bx bxs-user'></i>
+                <%  
+    String signError = (String) session.getAttribute("signError");
+    if (signError != null) {   
+        %>
+      <span  style="color: red;" ><%=signError%></span> 
+    <% } %>
                 <input type="text" id="username" name="username" placeholder="Username" required>
             </div>
             <div class="input-group">
