@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="estm.dsic.jee.model.User" %>
 
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
@@ -24,7 +25,22 @@
         <!--  -->
         <li><a href="page/about">About</a></li>
         <li><a href="page/contact">Contact</a></li>
-        <li><a href="page/login">Login</a></li>
+       <%-- testing if the user in the session show dashbaord tab else the login tab --%>
+       <%-- so if the user already loged in he will only see the dashboard tell he logout --%>
+<%
+         User user = (User) session.getAttribute("user");
+    if (user != null) {
+      %>
+       <li><a href="page/dashboard">Dashboard</a></li>
+       <li><a href="/web02/logout">Logout</a></li>
+        <%
+    }else{
+      %>
+      <li><a href="page/login">Login</a></li>
+       <%
+    }
+%>
+
         <!--  -->
       </ul>
     </nav>

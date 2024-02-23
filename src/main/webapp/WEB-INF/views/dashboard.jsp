@@ -32,17 +32,17 @@
         <li><a   href="about">About</a></li>
         <li><a href="contact">Contact</a></li>
         <li><a class="active" href="#">Dashboard</a></li>
+         <li><a href="/web02/logout">Logout</a></li>
         <!--  -->
       </ul>
     </nav>
     <div>
+
     <section>
     <h1>Dashboard Page</h1>
     <h2>Welcome to Dashboard</h2>
     <p>Welcome, <%= user.getUsername() %>!</p>
     <p>Email: <%= user.getEmail() %></p>
-    <a href="/web02/logout">Logout</a> <!-- This link will trigger the logout action -->
-
     </section>
 
      <!-- -------------------footer-------------------- -->

@@ -36,23 +36,9 @@
       </ul>
     </nav>
     <div>
-    <%-- <section>
-   <h2>Login</h2>
-    <form action="/web02/login" method="post">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
-    </section> --%>
-    
-    
-    <%@ include file="./components/login-signup.jsp" %>
 
-     <!-- -------------------footer-------------------- -->
-    <%@ include file="./footer.jsp" %>
-    <!-- ----------------------------------------------- -->
-   
+    <%@ include file="./components/login-signup.jsp" %>
+    <%@ include file="./footer.jsp" %>   
+
 </body>
 </html>
