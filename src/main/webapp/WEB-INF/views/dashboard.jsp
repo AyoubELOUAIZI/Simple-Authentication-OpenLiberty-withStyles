@@ -19,7 +19,7 @@
     if (user != null) {
         
 %>
-
+<div class="navbar">
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -35,6 +35,7 @@
         <!--  -->
       </ul>
     </nav>
+    <div>
     <section>
     <h1>Dashboard Page</h1>
     <h2>Welcome to Dashboard</h2>

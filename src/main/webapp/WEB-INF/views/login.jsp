@@ -19,8 +19,8 @@
     }
 
 %>
-
-<nav>
+<div class="navbar">
+<nav class="">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -36,7 +36,8 @@
         <!--  -->
       </ul>
     </nav>
-    <section>
+    <div>
+    <%-- <section>
    <h2>Login</h2>
     <form action="/web02/login" method="post">
         <label for="email">Email:</label>
@@ -45,7 +46,10 @@
         <input type="password" id="password" name="password" required><br><br>
         <input type="submit" value="Login">
     </form>
-    </section>
+    </section> --%>
+    
+    
+    <%@ include file="./components/login-signup.jsp" %>
 
      <!-- -------------------footer-------------------- -->
     <%@ include file="./footer.jsp" %>

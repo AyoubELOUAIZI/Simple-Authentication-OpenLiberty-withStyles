@@ -19,6 +19,7 @@
     }
 
 %>
+<div class="navbar">
 <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -35,6 +36,7 @@
         <!--  -->
       </ul>
     </nav>
+    <div>
     <section>
     <h2>SignUp</h2>
     <form action="/web02/signup" method="post">

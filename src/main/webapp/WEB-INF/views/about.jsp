@@ -8,6 +8,7 @@
     <title>About Us</title>
 </head>
 <body>
+<div class="navbar">
  <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -24,6 +25,7 @@
         <!--  -->
       </ul>
     </nav>
+    <div>
     <section>
     <h2>About Us</h2>
     <p>This is the About Us page content.</p>
