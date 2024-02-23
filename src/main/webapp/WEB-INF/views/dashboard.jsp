@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="estm.dsic.jee.model.User" %>
-<%@ page import="java.sql.SQLException" %>
-<%@ page import="javax.servlet.ServletException" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,12 +36,14 @@
     </nav>
     <div>
 
-    <section>
+    <%-- <section>
     <h1>Dashboard Page</h1>
     <h2>Welcome to Dashboard</h2>
     <p>Welcome, <%= user.getUsername() %>!</p>
     <p>Email: <%= user.getEmail() %></p>
-    </section>
+    </section> --%>
+    <%@ include file="./components/hero-dashbaord.jsp" %>
+
 
      <!-- -------------------footer-------------------- -->
     <%@ include file="./footer.jsp" %>

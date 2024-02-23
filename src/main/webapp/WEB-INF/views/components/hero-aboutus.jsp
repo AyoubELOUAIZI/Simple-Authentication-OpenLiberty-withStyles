@@ -161,13 +161,14 @@
 }
 
 .number4vid {
-  width: 34%;
+  width: 44%;
   height: 33%;
   position: absolute;
   margin-top: 62%;
   margin-right: 27%;
   margin-bottom: 0px;
   margin-left: 39%;
+  z-index:2;
 }
 
 .number5img {
@@ -314,21 +315,18 @@
   <div class="responsive-container-block Container">
     <div class="responsive-container-block leftSide">
       <p class="text-blk heading">
-        Meet Our Creative Team
-      </p>
+The Higher School of Technology, Meknes      </p>
       <p class="text-blk subHeading">
-        Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising &amp; Media Specialist, Online Marketing Professionals, Freelancers and anyone looking to pursue a career in digital marketing, Accounting, Web development, Programming. Multimedia and CAD design.
-      </p>
-    </div>
+Since 1993, the Higher School of Technology of Meknes has offered vocational training in various disciplines, providing education in electrical engineering, computer engineering, management technology, and communication technology. With 15 departments spanning secondary and tertiary education, it caters to diverse training needs, fostering an interdisciplinary academic environment. Equipped with modern technical infrastructure and a rich library covering various fields such as management, economics, computer science, and engineering, the institution aims to cultivate skilled technicians. Upon completion of two years, students receive a University degree of technology (DUT), while three-year programs grant a professional license since 2014. The teaching staff comprises researchers, secondary school teachers, engineers, and instructors, catering to the demands of the local, regional, and national job markets. The school fosters strong ties with the socio-economic landscape through student internships and professional engagement, ensuring graduates are readily employable. Those who do not continue their studies still find success in their respective fields.    </div>
     <div class="responsive-container-block rightSide">
-      <img class="number1img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET32.jpg">
-      <img class="number2img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d14.png">
-      <img class="number3img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b245.png">
-      <img class="number5img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Customer supports.png">
-      <iframe allowfullscreen="allowfullscreen" class="number4vid" poster="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b242.png" src="https://www.youtube.com/embed/svg%3E?">
+      <img class="number1img" src="https://res.cloudinary.com/dm9udoven/image/upload/v1698537822/EST%20MEKNES/jkvup6bjhqzj3xdmxdnr.jpg">
+      <img class="number2img" src="https://res.cloudinary.com/dm9udoven/image/upload/v1698707602/EST%20MEKNES/kjoredjbvyvqgbjs5t7x.jpg">
+      <img class="number3img" src="https://res.cloudinary.com/dm9udoven/image/upload/v1698707809/EST%20MEKNES/tregvglcjvfbjf37eofi.jpg">
+      <img class="number5img" src="https://res.cloudinary.com/dm9udoven/image/upload/v1698537822/EST%20MEKNES/jkvup6bjhqzj3xdmxdnr.jpg">
+      <iframe allowfullscreen="allowfullscreen" class="number4vid" poster="https://res.cloudinary.com/dm9udoven/image/upload/v1708656534/EST%20MEKNES/ESTM_mjnnev.png" src="https://res.cloudinary.com/dm9udoven/video/upload/v1708656265/EST%20MEKNES/ESTM_-_%C3%89cole_sup%C3%A9rieure_de_technologie_de_Mekn%C3%A8s_%E1%B4%B4%E1%B4%B0_mp31jw.mp4">
       </iframe>
-      <img class="number7img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d51.png">
-      <img class="number6img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d12.png">
+      <img class="number7img" src="https://res.cloudinary.com/dm9udoven/image/upload/v1698537820/EST%20MEKNES/ysdtnzdbsfgelzuefece.jpg">
+      <img class="number6img" src="https://res.cloudinary.com/dm9udoven/image/upload/v1708656254/EST%20MEKNES/1583801271990_1_pcxuqp.jpg">
     </div>
   </div>
 </div>

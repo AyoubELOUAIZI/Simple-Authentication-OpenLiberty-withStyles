@@ -1,4 +1,3 @@
-  
   <style>
   body {
     margin: 0;
@@ -8,7 +7,7 @@
 
 .hero {
     position: relative;
-    background: url('https://fastly.4sqi.net/img/general/width960/31072601_hjtJG8feWEGuPE_-Ov-WCvh7sszBK9Le_T7-aQh-42Y.jpg') center/cover no-repeat;
+    background: url('https://res.cloudinary.com/dm9udoven/image/upload/v1708656769/EST%20MEKNES/EST_Mekn%C3%A8s_kzrati.png') center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -71,12 +70,11 @@
 }
 
   </style>
+        
   <header class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Empowering Vocational Excellence: The Higher School of Technology, Meknes</h1>
-            <p class="hero-subtitle">ESTM: Nurturing Vocational Excellence
-
-</p>
-            <a href="page/about" class="hero-button">Learn More</a>
+            <h1 class="hero-title">Welcome to the ESTM Platform, <%= user.getUsername() %> ! We're excited to have you join us. Feel free to explore and engage with our resources"</h1>
+            <p class="hero-subtitle">For any assistance, reach out to us at with your email <%= user.getEmail() %> </p>
+            <%-- <a href="page/about" class="hero-button">Learn More</a> --%>
         </div>
 </header>
