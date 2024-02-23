@@ -45,12 +45,14 @@
       </ul>
     </nav>
     <div>
-    <section>
+     <%@ include file="./WEB-INF/views/components/hero1.jsp" %>
+    <%-- <section>
         <h2>Welcome to Hello Servlet</h2>  
     <p>
         <a href="servlet">Click here</a> to get a greeting from the Hello Servlet.
     </p>
-    </section>
+    </section> --%>
+
     <!-- --------------------------------------- -->
     <%@ include file="./WEB-INF/views/footer.jsp" %>
     <!-- --------------------------------------- -->

@@ -43,10 +43,12 @@
       </ul>
     </nav>
     <div>
-    <section>
+    <%-- <section>
     <h2>About Us</h2>
     <p>This is the About Us page content.</p>
-    </section>
+    </section> --%>
+     <%@ include file="./components/hero-aboutus.jsp" %>
+
      <!-- --------------------------------------- -->
     <%@ include file="./footer.jsp" %>
     <!-- --------------------------------------- -->
