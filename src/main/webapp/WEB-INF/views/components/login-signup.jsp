@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <style>
 
  :root {
@@ -394,6 +396,13 @@ body {
         <form action="/web02/login" method="post" class="form sign-in">
             <div class="input-group">
                 <i class='bx bxs-user'></i>
+            
+<%  
+    String authError = (String) session.getAttribute("authError");
+    if (authError != null) {   
+        %>
+      <span  style="color: red;" ><%=authError%></span> 
+    <% } %>
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="input-group">

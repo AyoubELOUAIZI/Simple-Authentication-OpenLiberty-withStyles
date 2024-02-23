@@ -32,9 +32,13 @@ public class LoginServlet extends HttpServlet {
                 // User authenticated, set user session attribute
                 HttpSession session = request.getSession();
                 session.setAttribute("user", user);
+                session.setAttribute("authError", null);
                 response.sendRedirect("page/dashboard");
             } else {
                 // Authentication failed, redirect to error page
+                HttpSession session = request.getSession();
+                session.setAttribute("authError", "Incorrect email or password");
+
                 response.sendRedirect("page/login");
             }
         } catch (SQLException e) {
